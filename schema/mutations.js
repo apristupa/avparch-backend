@@ -46,6 +46,8 @@ const mutation = new GraphQLObjectType({
           const params    = consultationRequest( name, email, phone, address, adu, addition, custom, remodel, tenantImprovement, notSure, instructions )
           const command   = new SendEmailCommand(params);
           const response  = await ses.send(command);
+
+          console.log(response)
           
           return { message: `You're request has been sent`}
           

@@ -14,7 +14,7 @@ exports.consultationRequest = (
   return {
     Source: `AVP Arch <arthurpristupa@gmail.com>`,
     Destination: {
-      ToAddresses: ['arthur@avparch.com'],
+      ToAddresses: ['contact@fabricioguardia.com'],
     },
     Message: {
       Subject: {
